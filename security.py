@@ -1,0 +1,2 @@
+TOKEN = '5164846521:AAHqB37Emk7h_2aohCJv7yven9hUlnuCpFw'
+tg_id = -1001510994693

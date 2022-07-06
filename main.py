@@ -23,7 +23,8 @@ def my_daily_task4(tg_id):
 
 def my_daily_task5(tg_id):
     bot.send_message(tg_id, "Хэй! У меня новый дом и я тут одна!")
-schedule.every().wednesday.at("18:35").do(my_daily_task5, tg_id)
+if schedule.every().wednesday.at("18:58").do(my_daily_task5, tg_id):
+    print('Cообщение для my_daily_task5 отправлено!')
 
 
 schedule.every().day.at("08:45").do(my_daily_task1, tg_id)
