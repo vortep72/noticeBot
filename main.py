@@ -19,6 +19,11 @@ def my_daily_task3(tg_id):
 
 def my_daily_task4(tg_id):
     bot.send_message(tg_id, "парни, кажется вам нужен отдых, попейте чаю или покурите")
+    
+
+def my_daily_task5(tg_id):
+    bot.send_message(tg_id, "Хэй! У меня новый дом и я тут одна!")
+schedule.every().wednesday.at("18:35").do(my_daily_task5, tg_id)
 
 
 schedule.every().day.at("08:45").do(my_daily_task1, tg_id)
